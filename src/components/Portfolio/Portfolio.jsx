@@ -4,9 +4,9 @@ import "./Portfolio.scss";
 import {
    featuredPortfolio,
    reactPortfolio,
-   mobilePortfolio,
+   nextPortfolio,
    designPortfolio,
-   contentPortfolio,
+   // contentPortfolio,
 } from "../../data";
 
 export default function Portfolio() {
@@ -20,17 +20,17 @@ export default function Portfolio() {
          title: "Featured",
       },
       {
-         id: "web",
-         title: "Web App",
+         id: "react",
+         title: "React",
       },
       {
-         id: "mobile",
-         title: "Mobile App",
+         id: "next",
+         title: "Next",
       },
-      // {
-      //    id: "design",
-      //    title: "Design",
-      // },
+      {
+         id: "design",
+         title: "Design",
+      },
       // {
       //    id: "content",
       //    title: "Content",
@@ -45,15 +45,15 @@ export default function Portfolio() {
          case "react":
             setData(reactPortfolio);
             break;
-         case "mobile":
-            setData(mobilePortfolio);
+         case "next":
+            setData(nextPortfolio);
             break;
          case "design":
             setData(designPortfolio);
             break;
-         case "content":
-            setData(contentPortfolio);
-            break;
+         // case "content":
+         //    setData(contentPortfolio);
+         //    break;
          default:
             setData(featuredPortfolio);
       }
@@ -75,13 +75,9 @@ export default function Portfolio() {
          <div className="container">
             {data.map((d) => (
                <div className="item">
-                  <img src={d.img} alt="" width="500" height="600" />
+                  <img src={d.img} alt="" width="220" height="150" />
                   <h3>
-                     <a
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        href="https://next-one.netlify.app/"
-                     >
+                     <a rel="noopener noreferrer" target="_blank" href={d.href}>
                         {d.title}
                      </a>
                   </h3>
