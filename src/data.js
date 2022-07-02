@@ -17,6 +17,18 @@ export const featuredPortfolio = [
       img: require("../src/img/react2.png"),
       href: "https://tetsh-booking.netlify.app/",
    },
+   {
+      id: 4,
+      title: "Gym Website",
+      img: require("../src/img/design1.png"),
+      href: "https://www.behance.net/gallery/77426301/GYM-Website-UI",
+   },
+   {
+      id: 5,
+      title: "Social Blog",
+      img: require("../src/img/react3.png"),
+      href: "https://tetsh-social-app.netlify.app/",
+   },
 ];
 
 export const reactPortfolio = [

@@ -1,6 +1,14 @@
 import "./Intro.scss";
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { init } from "ityped";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+   faBehance,
+   faGithub,
+   faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Intro() {
    const textRef = useRef();
@@ -10,7 +18,11 @@ export default function Intro() {
          showCursor: false,
          backDelay: 1500,
          backSpeed: 60,
-         strings: ["Developer", "Designer", "Content Creator"],
+         strings: [
+            "Frontend Developer",
+            "Designer",
+            "Computer Science Student",
+         ],
       });
    }, []);
 
@@ -26,10 +38,57 @@ export default function Intro() {
                <h2>Hi There, I'm</h2>
                <h1>Abdul</h1>
                <h3>
-                  Freelance <span ref={textRef}></span>
+                  <span ref={textRef}></span>
                </h3>
+
+               <div className="social">
+                  <div class="button">
+                     <div class="icon">
+                        <a
+                           className="iconLink"
+                           href="https://github.com/Abdalrahman8"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
+                           <FontAwesomeIcon className="i fab" icon={faGithub} />
+                        </a>
+                     </div>
+                  </div>
+
+                  <div class="button">
+                     <div class="icon">
+                        <a
+                           className="iconLink"
+                           href="https://www.linkedin.com/in/abdalrahmansaleh/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
+                           <FontAwesomeIcon
+                              className="i fab"
+                              icon={faLinkedin}
+                           />
+                        </a>
+                     </div>
+                  </div>
+
+                  <div class="button">
+                     <div class="icon">
+                        <a
+                           className="iconLink"
+                           href="https://www.behance.net/abdalrahman8"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
+                           <FontAwesomeIcon
+                              className="i fab"
+                              icon={faBehance}
+                           />
+                        </a>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <a href="#portfolio">
+            <a href="#portfolio" className="clickBottom">
                <img src="assets/down.png" alt="" />
             </a>
          </div>

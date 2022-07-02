@@ -68,6 +68,7 @@
          }
          h3 {
             font-size: 30px;
+            height: 50px;
 
             @include mobile {
                font-size: 20px;
@@ -94,7 +95,7 @@
          }
       }
 
-      a {
+      .clickBottom {
          position: absolute;
          bottom: 10px;
          left: 40%;
@@ -111,4 +112,69 @@
          }
       }
    }
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+.button {
+   float: left;
+   width: 60px;
+   height: 60px;
+   cursor: pointer;
+   background: #fff;
+   overflow: hidden;
+   border-radius: 50px;
+   transition: all 0.3s ease-in-out;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button span {
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 60px;
+   margin-left: 10px;
+}
+
+// .button:hover {
+//    width: 200px;
+// }
+
+.social {
+   margin-top: 50px;
+}
+.button:nth-child(1):hover .icon {
+   background: #333;
+}
+
+.button:nth-child(2):hover .icon {
+   background: #0e76a8;
+}
+
+.button:nth-child(3):hover .icon {
+   background: #1da1f2;
+}
+
+.button .icon {
+   width: 60px;
+   height: 60px;
+   text-align: center;
+   border-radius: 50px;
+   transition: all 0.3s ease-in-out;
+}
+
+.iconLink {
+}
+
+.button .icon .i {
+   font-size: 25px;
+   line-height: 60px;
+   margin-top: 20px;
+   // transition: all 0.3s ease-in-out;
+}
+
+.button:hover .i {
+   color: #fff;
 }

@@ -4,28 +4,28 @@ export default function Testimonials() {
    const data = [
       {
          id: 1,
-         name: "Tom Durden",
-         title: "Senior Developer",
-         img: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-         icon: "assets/twitter.png",
-         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+         name: "Mike Wells",
+         title: "Mastering Engineer",
+         img: require("../../img/Mike.jpg"),
+         icon: "assets/linkedin.png",
+         desc: "If you are considering Abdul, for a job, look no further. He will be a blessing for your business. Abdul has an eye for design and can transform a regular landing page, into a high converting landing page ",
       },
       {
          id: 2,
-         name: "Alex Kalinski",
-         title: "Co-Founder of DELKA",
+         name: "Alena Renner",
+         title: "Upwork Client",
          img: "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
          icon: "assets/youtube.png",
-         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+         desc: "He goes above, and beyond just completing a job, he views his clients' projects as his projects. His brilliance blows my mind; I am just so thankful that Upwork introduced me to Abdal",
          featured: true,
       },
       {
          id: 3,
          name: "Martin Harold",
-         title: "CEO of ALBI",
+         title: "Upwork Client",
          img: "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
          icon: "assets/linkedin.png",
-         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+         desc: "His loyalty, technical abilities, and efforts are unparalleled, Abdul has become part of our team.",
       },
    ];
 

@@ -50,6 +50,19 @@
       }
 
       .right {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         gap: 50px;
+
+         a {
+            font-size: 15px;
+            color: white;
+            background-color: crimson;
+            padding: 10px;
+            border-radius: 15px;
+         }
+
          .hamburger {
             width: 32px;
             height: 25px;
